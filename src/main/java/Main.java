@@ -27,14 +27,14 @@ public class Main {
         Sample s = new Sample();
         callBat b = new callBat();
         for(DataConfiguration tmp : a){
+            b.batStatic(); //IPアドレス固定
             s.inputCsv(tmp);
-            b.batStatic();
             System.out.print("continue? : [Y/n]");
             String flag = scan.nextLine();
-            b.batDhcp();
             if (flag != "Y") {
                 break;
             }
+            b.batDhcp(); //IPアドレス固定解除
         }
         //機器作成が終了したらYを入力
     }

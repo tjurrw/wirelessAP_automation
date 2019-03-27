@@ -13,10 +13,11 @@ public class Sample {
 
         WebElement changeSsid = driver.findElement(By.name("ssid0"));
         changeSsid.clear();
-        changeSsid.sendKeys(a[].ssid);
+        a[].ssid = String
+        changeSsid.sendKeys(a[].ssid); //데이터형 변환
 
         WebElement getPw = driver.findElement(By.name("pskValue0_show"));
-        getPw.click(); //비밀번호 획득
+        getPw.click();
 
         WebElement adminId = driver.findElement(By.name("username"));
         adminId.clear();
@@ -30,10 +31,6 @@ public class Sample {
 
         WebElement changeIp = driver.findElement(By.name("lan_ip"));
         changeIp.click();
-
-        Thread.sleep(2000);
-        WebElement passWord = driver.findElement(By.name("user_pw"));
-        passWord.sendKeys("test");
     }
 }
 
