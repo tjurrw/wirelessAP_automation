@@ -28,9 +28,10 @@ public class Main {
         callBat b = new callBat();
         for(DataConfiguration tmp : a){
             s.inputCsv(tmp);
-            b.
+            b.batStatic();
             System.out.print("continue? : [Y/n]");
             String flag = scan.nextLine();
+            b.batDhcp();
             if (flag != "Y") {
                 break;
             }
