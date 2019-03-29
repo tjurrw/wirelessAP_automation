@@ -13,11 +13,13 @@ public class Sample {
 
         WebElement changeSsid = driver.findElement(By.name("ssid0"));
         changeSsid.clear();
-        a[].ssid = String
-        changeSsid.sendKeys(a[].ssid); //데이터형 변환
+        String x = String.valueOf(a.ssid); //데이터형 변환
+        changeSsid.sendKeys(x);
 
         WebElement getPw = driver.findElement(By.name("pskValue0_show"));
         getPw.click();
+        getPw.getText();
+        //습득한 비밀번호를 csv파일에 기입
 
         WebElement adminId = driver.findElement(By.name("username"));
         adminId.clear();
@@ -30,10 +32,8 @@ public class Sample {
         adminCpw.sendKeys("pwd");
 
         WebElement changeIp = driver.findElement(By.name("lan_ip"));
-        changeIp.click();
+        changeIp.clear();
+        String y = String.valueOf(a.localip);
+        changeIp.sendKeys(y); //메인 클래스에서 생성된 아이피를 투입
     }
 }
-
-/* http://admin:0526newp@192.168.76.20 basic 인증 */
-/* socket */
-/* 윈도우 쉘 커맨드 활용하는 방법 - IP주소 변 */

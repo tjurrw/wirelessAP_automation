@@ -19,13 +19,15 @@ public class Main {
 
         for(int i = 0; i < nor; i++) {
             a[i] = new DataConfiguration();
-            a[i].ssid = bldgname + scan.nextInt(); //방 이름을 직접 입력
+            a[i].ssid = bldgname + scan.nextLine(); //방 이름을 직접 입력
             a[i].localip = "192.168.76." + (20 + i);
         }
         //各部屋にlocal ipアドレスを指定
 
         Sample s = new Sample();
+
         callBat b = new callBat();
+
         for(DataConfiguration tmp : a){
             b.batStatic(); //IPアドレス固定
             s.inputCsv(tmp);

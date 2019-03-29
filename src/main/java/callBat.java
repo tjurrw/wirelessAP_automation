@@ -2,7 +2,7 @@ import java.io.IOException;
 
 public class callBat {
     public void batStatic() {
-        String bat_static = "cmd.exe /c start C:\\\\Users\\\\Administrator\\\\Desktop\\\\2.180";
+        String bat_static = "cmd.exe /c start C:\\Users\\outsourcing006\\Desktop\\(外付)2.180.bat - ショートカット";
         try {
             Runtime.getRuntime().exec(bat_static);
         } catch (IOException e) {
@@ -11,7 +11,7 @@ public class callBat {
     }
 
     public void batDhcp(){
-        String bat_dhcp = "cmd.exe /c start C:\\\\Users\\\\Administrator\\\\Desktop\\\\DHCP";
+        String bat_dhcp = "cmd.exe /c start C:\\Users\\outsourcing006\\Desktop\\auto.bat - ショートカット";
         try {
             Runtime.getRuntime().exec(bat_dhcp);
         } catch (IOException e) {

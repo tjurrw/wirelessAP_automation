@@ -8,7 +8,7 @@ public class OutputCsv {
 
     public OutputCsv(String filename){
         try{
-            FileWriter f = new FileWriter("/Users/parkchikook/IdeaProjects/JavaPractice/" + filename);
+            FileWriter f = new FileWriter("C:\\Users\\outsourcing006\\Desktop\\" + filename);
             this.pw = new PrintWriter(new BufferedWriter(f));
         } catch (IOException ex) {
             ex.printStackTrace();
