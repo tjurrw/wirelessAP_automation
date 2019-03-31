@@ -17,7 +17,6 @@ public class Sample {
         changeSsid.sendKeys(x);
 
         WebElement getPw = driver.findElement(By.name("pskValue0_show"));
-        getPw.click();
         getPw.getText();
         //습득한 비밀번호를 csv파일에 기입
 
@@ -26,10 +25,13 @@ public class Sample {
         adminId.sendKeys("admin");
         WebElement adminPw = driver.findElement(By.name("newpass"));
         adminPw.clear();
-        adminPw.sendKeys("pwd");
+        adminPw.sendKeys("admin");
         WebElement adminCpw = driver.findElement(By.name("confpass"));
         adminCpw.clear();
-        adminCpw.sendKeys("pwd");
+        adminCpw.sendKeys("admin");
+
+        driver.get("http://admin:admin@192.168.2.180");
+        Thread.sleep(5000);
 
         WebElement changeIp = driver.findElement(By.name("lan_ip"));
         changeIp.clear();

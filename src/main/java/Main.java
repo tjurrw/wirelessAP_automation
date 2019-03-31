@@ -1,4 +1,7 @@
 import java.util.Scanner;
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.PrintWriter;
 import java.io.IOException;
 
 public class Main {
@@ -9,7 +12,7 @@ public class Main {
         System.out.println("Please input information");
         Scanner scan = new Scanner(System.in);
 
-        bldgname = scan.nextLine(); // ビルの名前を入力
+        bldgname = scan.nextLine(); //ビルの名前を入力
         nor = scan.nextInt(); //部屋の数を入力
 
         System.out.println(bldgname);
@@ -39,6 +42,24 @@ public class Main {
             b.batDhcp(); //IPアドレス固定解除
         }
         //機器作成が終了したらYを入力
+
+        try{
+            FileWriter f = new FileWriter("C:\\Users\\outsourcing006\\Desktop\\" + bldgname);
+            PrintWriter pw = new PrintWriter(new BufferedWriter(f));
+
+            for(DataConfiguration tmp : a){
+                pw.print(); //ssid
+                pw.print(",");
+                pw.print(""); //localIp
+                pw.print(",");
+                pw.print(""); //getPw
+                pw.println();
+            }
+
+            pw.close();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 }
 
