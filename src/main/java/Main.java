@@ -37,6 +37,7 @@ public class Main {
             System.out.print("continue? : [Y/n]");
             String flag = scan.nextLine();
             if (flag != "Y") {
+                b.batDhcp();
                 break;
             }
             b.batDhcp(); //IPアドレス固定解除
@@ -45,18 +46,18 @@ public class Main {
 
         try{
             FileWriter f = new FileWriter("C:\\Users\\outsourcing006\\Desktop\\" + bldgname);
-            PrintWriter pw = new PrintWriter(new BufferedWriter(f));
+            PrintWriter prw = new PrintWriter(new BufferedWriter(f));
 
             for(DataConfiguration tmp : a){
-                pw.print(tmp.ssid); //ssid
-                pw.print(",");
-                pw.print(tmp.localip); //localIp
-                pw.print(",");
-                pw.print(""); //getPw
-                pw.println();
+                prw.print(tmp.ssid); //ssid
+                prw.print(",");
+                prw.print(tmp.localip); //localIp
+                prw.print(",");
+                prw.print(""); //getPw
+                prw.println();
             }
 
-            pw.close();
+            prw.close();
         } catch (IOException ex) {
             ex.printStackTrace();
         }

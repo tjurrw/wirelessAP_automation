@@ -19,6 +19,7 @@ public class Sample {
         WebElement getPw = driver.findElement(By.name("pskValue0_show"));
         getPw.getText();
         String z = String.valueOf(a.pwd);
+        System.out.println(getPw);
 
         //습득한 비밀번호를 csv파일에 기입
 
