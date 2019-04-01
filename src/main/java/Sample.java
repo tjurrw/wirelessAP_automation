@@ -18,6 +18,8 @@ public class Sample {
 
         WebElement getPw = driver.findElement(By.name("pskValue0_show"));
         getPw.getText();
+        String z = String.valueOf(a.pwd);
+
         //습득한 비밀번호를 csv파일에 기입
 
         WebElement adminId = driver.findElement(By.name("username"));

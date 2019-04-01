@@ -48,9 +48,9 @@ public class Main {
             PrintWriter pw = new PrintWriter(new BufferedWriter(f));
 
             for(DataConfiguration tmp : a){
-                pw.print(); //ssid
+                pw.print(tmp.ssid); //ssid
                 pw.print(",");
-                pw.print(""); //localIp
+                pw.print(tmp.localip); //localIp
                 pw.print(",");
                 pw.print(""); //getPw
                 pw.println();
