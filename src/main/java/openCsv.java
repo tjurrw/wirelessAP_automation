@@ -17,10 +17,15 @@ public class openCsv {
 
             p.close();
 
+            for(int row = 0; row < data.length; row++) {
+                for(int col = 0; col < data.length; col++) {
+                    System.out.println(data[row][col]);
+                    }
+                }
             }
 
             catch (IOException e) {
                 e.printStackTrace();
-            }
+        }
     }
 }
