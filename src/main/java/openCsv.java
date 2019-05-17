@@ -19,8 +19,9 @@ public class openCsv {
 
             for(int row = 0; row < data.length; row++) {
                 for(int col = 0; col < data.length; col++) {
-                    System.out.println(data[row][col]);
+                    System.out.print(data[row][col]);
                     }
+                    System.out.println();
                 }
             }
 
