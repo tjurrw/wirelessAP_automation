@@ -5,7 +5,7 @@ public class openCsv {
         String[][] data = new String[100][4];
 
         try {
-            File f = new File(filename);
+            File f = new File("/Users/parkchikook/IdeaProjects/selenium_test/src/main/java", filename);
             BufferedReader p = new BufferedReader(new FileReader(f));
 
             String line = p.readLine(); //1行ずつCSVファイルを読み込む
