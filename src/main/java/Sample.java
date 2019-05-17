@@ -5,7 +5,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Sample {
     public void inputCsv(DataConfiguration a) throws InterruptedException {
-        System.setProperty("webdriver.firefox.driver", "/usr/local/bin/geckodriver");
+        System.setProperty("webdriver.firefox.driver", "/geckodriver");
         WebDriver driver = new FirefoxDriver();
 
         driver.get("http://admin:admin@192.168.2.180");
@@ -19,20 +19,19 @@ public class Sample {
         WebElement getPw = driver.findElement(By.name("pskValue0_show"));
         getPw.getText();
         String z = String.valueOf(a.pwd);
-        System.out.println(getPw);
+         //csv파일에 기기 비밀번호 입력(출력)
 
         //습득한 비밀번호를 csv파일에 기입
 
         WebElement adminId = driver.findElement(By.name("username"));
         adminId.clear();
-        adminId.sendKeys("admin");
+        adminId.sendKeys("admin"); //관리자
         WebElement adminPw = driver.findElement(By.name("newpass"));
         adminPw.clear();
-        adminPw.sendKeys("admin");
+        adminPw.sendKeys("admin"); //관리자 비밀번호 입력
         WebElement adminCpw = driver.findElement(By.name("confpass"));
         adminCpw.clear();
-        adminCpw.sendKeys("admin");
-
+        adminCpw.sendKeys("admin"); //관리자 ㅎ비밀번호 확인
         driver.get("http://admin:admin@192.168.2.180");
         Thread.sleep(5000);
 
