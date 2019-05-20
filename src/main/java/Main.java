@@ -21,5 +21,7 @@ public class Main{
             System.out.print(record.get(2));
             System.out.println();
         }
+
+
     }
 }

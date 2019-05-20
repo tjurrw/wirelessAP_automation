@@ -1,6 +1,5 @@
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
 public class OpenCsv {
     public ArrayList<ArrayList<String>> openCsv(String filename) {
@@ -11,12 +10,7 @@ public class OpenCsv {
 
             String line; //
             while ((line = p.readLine()) != null) {
-                ArrayList<String> record = new ArrayList<>(); //line = p.readLine()를 수용
-                String[] st = line.split(",", 0);
-                for(int i = 0; i < 3; i++){
-                    record.add(st[i]);
-                }
-
+                ArrayList<String> record = new ArrayList<>(Arrays.asList(line.split(",", 0)));
                 data.add(record);
             }
 
