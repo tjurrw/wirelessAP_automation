@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.ArrayList;
-import java.util.StringTokenizer;
+import java.util.Arrays;
 
 public class OpenCsv {
     public ArrayList<ArrayList<String>> openCsv(String filename) {
@@ -11,11 +11,12 @@ public class OpenCsv {
 
             String line; //
             while ((line = p.readLine()) != null) {
-                ArrayList<String> record = new ArrayList<>();
-                StringTokenizer st = new StringTokenizer(line, ",");
-                while (st.hasMoreTokens()) {
-                    record.add(st.nextToken());
+                ArrayList<String> record = new ArrayList<>(); //line = p.readLine()를 수용
+                String[] st = line.split(",", 0);
+                for(int i = 0; i < 3; i++){
+                    record.add(st[i]);
                 }
+
                 data.add(record);
             }
 
@@ -24,7 +25,6 @@ public class OpenCsv {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return data;
     }
 }
