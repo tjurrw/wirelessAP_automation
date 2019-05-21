@@ -27,7 +27,13 @@ public class Main {
 
         for (ArrayList<String> record : list) {
             String pwd = rtn.returnPwd(record.get(0), record.get(1), record.get(2), record.get(3));
-            System.out.println(pwd);
-        }
+
+            ArrayList<String> plusPwd = new ArrayList<>();
+            plusPwd.add(0, pwd);
+
+            list.add(1, plusPwd);
+            
+            System.out.println(list);
+        } //1부터 널값까지
     }
 }
