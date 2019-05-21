@@ -16,24 +16,20 @@ public class Main {
         OpenCsv openCsv = new OpenCsv();
         ArrayList<ArrayList<String>> list = openCsv.openCsv(bldgname); //CSVデータ(ファイル名：建物名)生成
 
-        for (ArrayList<String> record : list) {
+/*        for (ArrayList<String> record : list) {
             System.out.print(record.get(0));
             System.out.print(",");
             System.out.print(record.get(2));
             System.out.println();
-        } System.out.println();
+        } System.out.println(); */
 
         returnPwd rtn = new returnPwd();
 
         for (ArrayList<String> record : list) {
             String pwd = rtn.returnPwd(record.get(0), record.get(1), record.get(2), record.get(3));
+            record.add(4, pwd);
 
-            ArrayList<String> plusPwd = new ArrayList<>();
-            plusPwd.add(0, pwd);
-
-            list.add(1, plusPwd);
-            
-            System.out.println(list);
+            System.out.println(record);
         } //1부터 널값까지
     }
 }
