@@ -31,5 +31,14 @@ public class Main {
 
             System.out.println(record);
         }
+
+        callBat.batStatic();
+
+        callBat.batgetinfo();
+
+        callBat.batDhcp();
+
+        callBat.batgetinfo();
+
     }
 }
