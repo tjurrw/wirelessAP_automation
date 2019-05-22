@@ -1,5 +1,5 @@
 ﻿ssid,ip,adminID,adminPWD
-chikook101,192.168.76.20,admin,adminPwd
-chikook102,192.168.76.21,admin,adminPwd
-chikook103,192.168.76.22,admin,adminPwd
-chikook104,192.168.76.23,admin,adminPwd
+chikook101,192.168.76.20,admin,pwd
+chikook102,192.168.76.21,admin,pwd
+chikook103,192.168.76.22,admin,pwd
+chikook104,192.168.76.23,admin,pwd

@@ -30,6 +30,6 @@ public class Main {
             record.add(4, pwd);
 
             System.out.println(record);
-        } //1부터 널값까지
+        }
     }
 }

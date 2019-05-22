@@ -3,7 +3,7 @@ import java.util.*;
 
 public class OpenCsv {
     public ArrayList<ArrayList<String>> openCsv(String filename) {
-        ArrayList<ArrayList<String>> data = new ArrayList<ArrayList<String>>();
+        ArrayList<ArrayList<String>> data = new ArrayList<>();
         try {
             File f = new File("./", filename + ".csv");
             BufferedReader p = new BufferedReader(new FileReader(f));
