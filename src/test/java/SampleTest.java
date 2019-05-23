@@ -8,7 +8,7 @@ public class SampleTest {
     @Test
     public void testGoogleSearch() throws InterruptedException {
         // Optional, if not specified, WebDriver will search your path for chromedriver.
-        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/parkchikook/IdeaProjects/exe/chromedriver");
 
         WebDriver driver = new ChromeDriver();
         driver.get("http://www.google.com/xhtml");

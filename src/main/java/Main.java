@@ -30,15 +30,9 @@ public class Main {
             record.add(4, pwd);
 
             System.out.println(record);
-        }
+        } System.out.println();
 
-        callBat.batStatic();
-
-        callBat.batgetinfo();
-
-        callBat.batDhcp();
-
-        callBat.batgetinfo();
+        selenium_test.seleniumTest();
 
     }
 }
