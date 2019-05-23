@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class selenium_test {
     public void seleniumTest(DataConfiguration a) throws InterruptedException {
-        System.setProperty("webdriver.firefox.driver", "/usr/local/bin/geckodriver");
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
         WebDriver driver = new ChromeDriver();
 
         driver.get("http://admin:admin@192.168.2.180");

@@ -4,14 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/Main.java" line="22" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbdc2649-7acb-4671-ab57-592ec78fa9f0" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/runCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/callBat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/callBat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/callBat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/callBat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chikook.csv" beforeDir="false" />
-    </list>
+    <list default="true" id="fbdc2649-7acb-4671-ab57-592ec78fa9f0" name="Default Changelist" comment="update" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -136,8 +129,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/selenium_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+            <state relative-caret-position="105">
+              <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -938,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/selenium_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="105">
+          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
