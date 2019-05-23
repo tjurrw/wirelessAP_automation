@@ -5,7 +5,7 @@ public class callBat {
         String bat_static = "./batstaticIP.sh.command";
         try {
             Runtime.getRuntime().exec(bat_static);
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -14,16 +14,17 @@ public class callBat {
         String bat_dhcp = "./batdhcp.sh.command";
         try {
             Runtime.getRuntime().exec(bat_dhcp);
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     public static void batgetinfo(){
-        String bat_getinfo = "./batgetinfo.sh.command";
+        String bat_getinfo = "sh sudo ls";
         try {
             Runtime.getRuntime().exec(bat_getinfo);
-        } catch (IOException e) {
+            System.out.println("success");
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
