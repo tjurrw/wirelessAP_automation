@@ -17,4 +17,6 @@ dependencies {
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.41.0'
 
     compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '3.141.59'
+
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version: '3.141.59'
 }
